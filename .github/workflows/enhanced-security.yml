@@ -107,6 +107,7 @@ jobs:
           args: >
             --severity-threshold=medium
             --fail-on=upgradable
+            --policy-path=.snyk
             --project-name=${{ github.repository }}-dependencies
             --sarif-file-output=snyk-dependencies.sarif
 
@@ -121,6 +122,7 @@ jobs:
           command: code test
           args: >
             --severity-threshold=high
+            --policy-path=.snyk
             --project-name=${{ github.repository }}-code
             --sarif-file-output=snyk-code.sarif
 
@@ -185,6 +187,7 @@ jobs:
           args: >
             --severity-threshold=high
             --file=dockerfile
+            --policy-path=.snyk
             --exclude-base-image-vulns
             --sarif-file-output=snyk-container.sarif
 
