@@ -86,6 +86,12 @@ ignore:
         reason: "Fixed by replacing javafaker with datafaker 2.4.0 which uses secure snakeyaml version"
         expires: "2026-09-17T23:59:59.999Z"
 
+  # Spring Core CVE-2025-41249 - RESOLVED by upgrading to Spring Boot 3.4.10
+  SNYK-JAVA-ORGSPRINGFRAMEWORK-12817817:
+    - "*":
+        reason: "Fixed by upgrading Spring Boot from 3.4.9 to 3.4.10 which updates spring-core to 6.2.11"
+        expires: "2026-09-24T23:59:59.999Z"
+
   # Example: Future Java dependency vulnerabilities
   # 'SNYK-JAVA-ORGAPACHECOMMONS-1234567':
   #   - '*':
